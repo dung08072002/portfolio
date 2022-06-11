@@ -1,1 +1,247 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu .nav-item {
+    margin: 0 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.information {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.information .row {
+    display: grid;
+    grid-template-columns: auto 243px;
+    align-items: center;
+}
+
+.introduce {
+    font-weight: 700;
+}
+
+.description {
+    margin: 15px 0;
+}
+
+.img-user {
+    border-radius: 50%;
+}
+
+.row_view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-post {
+    padding: 20px 0;
+    background-color: #EDF7FA;
+}
+
+.row_view {
+    margin-bottom: 15px;
+}
+
+.recent-post .row.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.row_infor-post {
+    margin: 15px 0;
+    display: flex;
+}
+
+/* .row.infor-post .col {
+    border-collapse: collapse;
+}
+.row.infor-post .col .createAt-post {
+    border-right: 1px solid #000;
+}
+.row.infor-post .col .roleIn-post {
+    border-left: 1px solid #000;
+} */
+
+.feat-w .column.one-feat-w {
+    display: grid;
+    grid-template-columns: 246px auto;
+    grid-gap: 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.footer {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media .item-icon {
+    margin: 0 24px;
+    font-size: 30px;
+}
+
+.btn-view {
+    background-color: #FF6464;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.row.post .column.post {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 25px 30px;
+}
+
+.title-post {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.item-infor-post.mid {
+    margin: 0 30px;
+}
+/* .row.works {
+} */
+
+.featured-works {
+    padding: 20px 0;
+}
+
+.title-works {
+    text-transform: capitalize;
+    color: #21243D;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.date-works {
+    background-color: #142850;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 3px 5px;
+}
+
+.row-date-role {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 15px 0;
+}
+.row-date-role .column.left {
+    margin-right: 15px;
+}
+
+.row-date-role .column.right {
+    color: #8695A4;
+}
+.short-desc {
+    font-size: 14px;
+}
+.img-works {
+    border-radius: 7px;
+}
+.column.one-feat-w {
+    padding: 30px 0;
+}
+.column.text {
+    border-bottom: 1px solid #E0E0E0;
+}
+.nav-menu_mobile {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    } 
+    .nav-menu_mobile {
+        display: block;
+        text-align: right;
+    }
+    .introduce-user {
+        display: flex;
+        flex-direction: column;
+    }
+    .hello-world {
+        order: 2;
+        font-size: 20px;
+    }
+    .introduce {
+        font-size: 30px;
+    }
+    .avatar {
+        order: 1;
+    }
+    .information .row {
+        display: flex;
+        text-align: center;
+    }
+    .img-user {
+        width: 65%;
+    }
+    .recent-post-view {
+        text-align: center;
+    }
+    .row_view {
+        display: block;
+    }
+    .view-all {
+        display: none;
+    }
+    .recent-post .row.post {
+        padding: 0 3%;
+        display: block;
+    }
+    .column.post {
+        margin-bottom: 15px;
+    }
+    .row.works {
+        text-align: center;
+    }
+    .feat-w .column.one-feat-w {
+        display: block;
+    }
+    .img-feat {
+        text-align: center;
+    }
+    .column.one-feat-w {
+        padding: 30px 20px;
+    }
+}
