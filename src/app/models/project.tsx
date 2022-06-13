@@ -1,8 +1,9 @@
 export interface IProject {
+    id?: number,
     nameProject: string,
     shortDescription: string,
     description: string,
-    cateProjectId?: number,
+    cateProject?: number,
     imageProject?: string,
     createAt?: string,
 }

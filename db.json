@@ -1,5 +1,41 @@
 {
     "users": [],
-    "posts": [],
-    "projects": []
+    "posts": [
+        {
+            "id": 1,
+            "title": "Making a design system from scratch",
+            "shortDecs": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "imagePost": "https://picsum.photos/300/300",
+            "creatAt": "12 May 2022"
+        },
+        {
+            "id": 2,
+            "title": "Making a design system from scratch updated",
+            "shortDecs": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "imagePost": "https://picsum.photos/300/300",
+            "creatAt": "12 May 2022"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "nameProject": "RiotGames Shop",
+            "shortDescription": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "cateProject": "Shop",
+            "imageProject": "https://picsum.photos/300/300",
+            "creatAt": "12 May 2022"
+        },
+        {
+            "id": 2,
+            "nameProject": "RiotGames Shop version 2",
+            "shortDescription": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "cateProject": "Shop",
+            "imageProject": "https://picsum.photos/300/300",
+            "creatAt": "12 May 2022"
+        }
+    ]
 }
