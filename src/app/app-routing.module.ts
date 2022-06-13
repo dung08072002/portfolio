@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { FormPostComponent } from './pages/admin/post/form-post/form-post.component';
 import { ListPostComponent } from './pages/admin/post/list-post/list-post.component';
+import { FormProjectComponent } from './pages/admin/project/form-project/form-project.component';
+import { ListProjectComponent } from './pages/admin/project/list-project/list-project.component';
 import { ListUserComponent } from './pages/admin/user/list-user/list-user.component';
 import { ClientComponent } from './pages/client/client.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -31,6 +33,13 @@ const routes: Routes = [
           { path: "", redirectTo: 'list', pathMatch: 'full' },
           { path: "list", component: ListPostComponent },
           { path: "add", component: FormPostComponent },
+        ]
+      },
+      {
+        path: "project", children: [
+          { path: "", redirectTo: 'list', pathMatch: 'full' },
+          { path: "list", component: ListProjectComponent },
+          { path: "add", component: FormProjectComponent },
         ]
       }
     ]

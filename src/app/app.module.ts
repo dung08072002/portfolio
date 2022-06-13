@@ -18,6 +18,9 @@ import { FormProjectComponent } from './pages/admin/project/form-project/form-pr
 import { ListUserComponent } from './pages/admin/user/list-user/list-user.component';
 import { ClientComponent } from './pages/client/client.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { AdminLayoutComponent } from './pages/admin/admin-layout/admin-layout.component';
+import { NavAdminComponent } from './components/adminLayout/nav-admin/nav-admin.component';
+import { SidebarAdminComponent } from './components/adminLayout/sidebar-admin/sidebar-admin.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
     FormProjectComponent,
     ListUserComponent,
     ClientComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminLayoutComponent,
+    NavAdminComponent,
+    SidebarAdminComponent
   ],
   imports: [
     BrowserModule,
