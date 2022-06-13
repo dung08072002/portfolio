@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 ul,
 ol {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -28,6 +35,10 @@ header {
 
 .nav-menu .nav-item {
     margin: 0 16px;
+}
+
+.nav-menu .nav-item a {
+    color: #000;
     font-size: 16px;
     font-weight: 500;
 }
@@ -136,6 +147,7 @@ header {
 .item-infor-post.mid {
     margin: 0 30px;
 }
+
 /* .row.works {
 } */
 
@@ -165,6 +177,7 @@ header {
     align-items: center;
     margin: 15px 0;
 }
+
 .row-date-role .column.left {
     margin-right: 15px;
 }
@@ -172,75 +185,97 @@ header {
 .row-date-role .column.right {
     color: #8695A4;
 }
+
 .short-desc {
     font-size: 14px;
 }
+
 .img-works {
     border-radius: 7px;
 }
+
 .column.one-feat-w {
     padding: 30px 0;
-}
-.column.text {
     border-bottom: 1px solid #E0E0E0;
 }
+
+/* .column.text {
+    border-bottom: 1px solid #E0E0E0;
+} */
 .nav-menu_mobile {
     display: none;
 }
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         display: none;
-    } 
+    }
+
     .nav-menu_mobile {
         display: block;
         text-align: right;
     }
+
     .introduce-user {
         display: flex;
         flex-direction: column;
     }
+
     .hello-world {
         order: 2;
         font-size: 20px;
     }
+
     .introduce {
         font-size: 30px;
     }
+
     .avatar {
         order: 1;
     }
+
     .information .row {
         display: flex;
         text-align: center;
     }
+
     .img-user {
         width: 65%;
     }
+
     .recent-post-view {
         text-align: center;
     }
+
     .row_view {
         display: block;
     }
+
     .view-all {
         display: none;
     }
+
     .recent-post .row.post {
         padding: 0 3%;
         display: block;
     }
+
     .column.post {
         margin-bottom: 15px;
     }
+
     .row.works {
         text-align: center;
     }
+
     .feat-w .column.one-feat-w {
         display: block;
     }
+
     .img-feat {
         text-align: center;
     }
+
     .column.one-feat-w {
         padding: 30px 20px;
     }
