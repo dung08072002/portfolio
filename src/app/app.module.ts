@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule} from '@angular/common/http'
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -15,6 +16,8 @@ import { FormPostComponent } from './pages/admin/post/form-post/form-post.compon
 import { ListProjectComponent } from './pages/admin/project/list-project/list-project.component';
 import { FormProjectComponent } from './pages/admin/project/form-project/form-project.component';
 import { ListUserComponent } from './pages/admin/user/list-user/list-user.component';
+import { ClientComponent } from './pages/client/client.component';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { ListUserComponent } from './pages/admin/user/list-user/list-user.compon
     FormPostComponent,
     ListProjectComponent,
     FormProjectComponent,
-    ListUserComponent
+    ListUserComponent,
+    ClientComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
