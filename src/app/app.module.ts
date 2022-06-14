@@ -21,6 +21,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { AdminLayoutComponent } from './pages/admin/admin-layout/admin-layout.component';
 import { NavAdminComponent } from './components/adminLayout/nav-admin/nav-admin.component';
 import { SidebarAdminComponent } from './components/adminLayout/sidebar-admin/sidebar-admin.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SidebarAdminComponent } from './components/adminLayout/sidebar-admin/si
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

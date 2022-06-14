@@ -1,38 +1,37 @@
 <div class="">
-    <div class="header_content_main">
-        <h4>List Project</h4>
-        <div>
-            <button routerLink="/admin/project/add" class="uppercase fw-bolder btn btn-primary">Add project +</button>
-        </div>
-    </div>
+  <div class="header_content_main">
+    <h4 class="text-3xl fw-bolder">List Project</h4>
     <div>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Short Desc</th>
-                <th scope="col">Image</th>
-                <th scope="col">Category</th>
-                <th scope="col">Create At</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let project of projectList, let i = index">
-                <th scope="row">{{i+1}}</th>
-                <td>{{project.nameProject}}</td>
-                <td>{{project.shortDescription}}</td>
-                <td><img src=`{{project.imageProject}}` height="80"
-                   width="80" alt=""></td>
-                   <td>{{project.cateProject}}</td>
-                   <td>{{project.createAt}}</td>
-                <td>
-                    <button routerLink="" class="btn btn-primary">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <button routerLink="/admin/project/add" class="uppercase fw-bolder btn btn-primary">Add project +</button>
     </div>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Short Desc</th>
+          <th scope="col">Image</th>
+          <th scope="col">Category</th>
+          <th scope="col">Create At</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let project of projectList, let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{project.nameProject}}</td>
+          <td>{{project.shortDescription}}</td>
+          <td><img src='{{project.imageProject}}' height="80" width="80" alt=""></td>
+          <td>{{project.cateProject}}</td>
+          <td>{{project.createAt}}</td>
+          <td>
+            <button routerLink="/admin/project/edit/{{project.id}}" class="btn btn-primary">Edit</button>
+            <button (click)="onRemoveItem(project.id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

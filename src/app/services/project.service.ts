@@ -31,6 +31,4 @@ export class ProjectService {
   updateProject(project : any): Observable<any> {
     return this.http.put<any>(`${this.API_URL}/${project.id}`, project)
   }
-
-
 }

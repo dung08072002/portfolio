@@ -1,12 +1,12 @@
 <section class="information">
     <div class="container">
         <div class="row introduce-user">
-            <div class="column hello-world">    
+            <div class="column hello-world">
                 <h2 class="introduce text-4xl">Hi, I am <span>Dungnv</span>,<br><span>Front-end Developer</span></h2>
                 <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                     Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
-                <button routerLink="signin" class="btn btn-view">Sign in with Dungnv</button>
+                <button routerLink="/signin" class="btn btn-view">Sign in with Dungnv</button>
             </div>
             <div class="column avatar">
                 <img class="img-user img-fluid" src="https://picsum.photos/300/300" alt="">
@@ -67,56 +67,19 @@
 <section class="featured-works">
     <div class="container">
         <div class="row works"><span>Featured works</span></div>
-        <div class="row feat-w">
+        <div class="row feat-w" *ngFor="let project of projectList, let i = index">
             <div class="column one-feat-w">
                 <div class="img-feat">
-                    <img src="https://picsum.photos/300/300" class="img-works img-fluid" alt="">
+                    <img src='{{project.imageProject}}' class="img-works img-fluid" alt="">
                 </div>
                 <div class="column text">
-                    <h2 class="title-works">designing dashboards</h2>
+                    <h2 class="title-works">{{project.nameProject}}</h2>
                     <div class="row-date-role">
                         <div class="column left"><span class="btn date-works">2020</span></div>
-                        <div class="column right"><span>Dashboards</span></div>
+                        <div class="column right"><span>{{project.cateProject}}</span></div>
                     </div>
                     <div class="short-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row feat-w">
-            <div class="column one-feat-w">
-                <div class="img-feat">
-                    <img src="https://picsum.photos/300/300" class="img-works img-fluid" alt="">
-                </div>
-                <div class="column text">
-                    <h2 class="title-works">designing dashboards</h2>
-                    <div class="row-date-role">
-                        <div class="column left"><span class="btn date-works">2020</span></div>
-                        <div class="column right"><span>Dashboards</span></div>
-                    </div>
-                    <div class="short-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row feat-w">
-            <div class="column one-feat-w">
-                <div class="img-feat">
-                    <img src="https://picsum.photos/300/300" class="img-works img-fluid" alt="">
-                </div>
-                <div class="column text">
-                    <h2 class="title-works">designing dashboards</h2>
-                    <div class="row-date-role">
-                        <div class="column left"><span class="btn date-works">2020</span></div>
-                        <div class="column right"><span>Dashboards</span></div>
-                    </div>
-                    <div class="short-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        {{project.shortDescription}}
                     </div>
                 </div>
             </div>

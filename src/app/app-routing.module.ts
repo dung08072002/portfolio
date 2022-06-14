@@ -15,14 +15,14 @@ import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
+  { path: "signin", component: SigninComponent },
+  { path: "signup", component: SignupComponent },
   {
     path: "", component: ClientComponent, children: [
       { path: "", redirectTo: 'home', pathMatch: 'full' },
       { path: "home", component: HomeComponent },
       { path: "post", component: PostComponent },
       { path: "project", component: ProjectComponent },
-      { path: "signin", component: SigninComponent },
-      { path: "signup", component: SignupComponent }
     ]
   },
   {
@@ -42,6 +42,7 @@ const routes: Routes = [
           { path: "", redirectTo: 'list', pathMatch: 'full' },
           { path: "list", component: ListProjectComponent },
           { path: "add", component: FormProjectComponent },
+          { path: "edit/:id", component: FormProjectComponent }
         ]
       }
     ]

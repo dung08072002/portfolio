@@ -1,1 +1,22 @@
-<p>project works!</p>
+<section class="featured-works">
+    <div class="container">
+        <div class="row works"><span>Featured works</span></div>
+        <div class="row feat-w" *ngFor="let project of projectList, let i = index">
+            <div class="column one-feat-w">
+                <div class="img-feat">
+                    <img src='{{project.imageProject}}' class="img-works img-fluid" alt="">
+                </div>
+                <div class="column text">
+                    <h2 class="title-works">{{project.nameProject}}</h2>
+                    <div class="row-date-role">
+                        <div class="column left"><span class="btn date-works">2020</span></div>
+                        <div class="column right"><span>{{project.cateProject}}</span></div>
+                    </div>
+                    <div class="short-desc">
+                        {{project.shortDescription}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,1 +1,36 @@
-<p>form-project works!</p>
+<div class="">
+    <div class="header_content_main">
+        <h4 class="text-3xl fw-bolder">Add Project</h4>
+        <div>
+            <button routerLink="/admin/project/list" class="uppercase fw-bolder btn btn-primary">Back to list</button>
+        </div>
+    </div>
+    <div>
+        <form action="" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name Project</label>
+                <input type="text" [(ngModel)]="project.nameProject" name="nameProject" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Short Description</label>
+                <textarea class="form-control" [(ngModel)]="project.shortDescription" name="shortDescription" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Description</label>
+                <textarea class="form-control" [(ngModel)]="project.description" name="description" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Category</label>
+                <input type="text" [(ngModel)]="project.cateProject" name="cateProject" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Image Project</label>
+                <input type="text" [(ngModel)]="project.imageProject" name="imageProject" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

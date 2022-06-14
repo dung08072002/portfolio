@@ -11,6 +11,7 @@ export class ListProjectComponent implements OnInit {
   projectList!: any;
 
   constructor(private projectService: ProjectService) {
+    this.showProjects()
   }
 
   ngOnInit(): void {
@@ -18,8 +19,8 @@ export class ListProjectComponent implements OnInit {
 
   showProjects() {
     this.projectService.getProjects().subscribe(data => {
-      this.projectList = data;
       console.log(data);
+      this.projectList = data;
     })
   }
 
@@ -27,7 +28,7 @@ export class ListProjectComponent implements OnInit {
     const confirm = window.confirm("Do you want to remove this product !");
     this.projectService.removeProject(id).subscribe(() => {
       if (confirm) {
-        this.projectList = this.projectList.filter((item: { id: number; }) => item.id !== id); 
+        this.projectList = this.projectList.filter((item: { id: number; }) => item.id !== id);
       }
     })
 
